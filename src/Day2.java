@@ -12,8 +12,8 @@ import java.util.function.Predicate;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Day2 {
-    List<List<Integer>> exampleInput = readInput(Path.of("input/2example"));
-    List<List<Integer>> input = readInput(Path.of("input/2"));
+    List<List<Integer>> exampleInput = readInput(Path.of("input/2/example"));
+    List<List<Integer>> input = readInput(Path.of("input/2/in"));
 
     private List<List<Integer>> readInput(Path path) throws IOException {
         return Files.readAllLines(path)

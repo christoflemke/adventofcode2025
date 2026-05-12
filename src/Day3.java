@@ -10,9 +10,9 @@ import java.util.regex.Pattern;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Day3 {
-    final String example = Files.readString(Path.of("input/3example"));
-    final String example2 = Files.readString(Path.of("input/3example2"));
-    final String input = Files.readString(Path.of("input/3"));
+    final String example = Files.readString(Path.of("input/3/example"));
+    final String example2 = Files.readString(Path.of("input/3/example2"));
+    final String input = Files.readString(Path.of("input/3/in"));
     final Pattern mulPattern = Pattern.compile("mul\\((?<left>\\d{1,3}),(?<right>\\d{1,3})\\).*");
     final Pattern doPattern = Pattern.compile("do\\(\\).*");
     final Pattern dontPattern = Pattern.compile("don't\\(\\).*");
@@ -56,7 +56,7 @@ public class Day3 {
 
     @Test
     void part1() {
-        assertThat(computeSum(input)).isEqualTo(161);
+        assertThat(computeSum(input)).isEqualTo(169021493);
     }
 
     private int computeSum2(String in) {
@@ -91,6 +91,6 @@ public class Day3 {
 
     @Test
     void part2() {
-        assertThat(computeSum2(input)).isEqualTo(0);
+        assertThat(computeSum2(input)).isEqualTo(111762583);
     }
 }

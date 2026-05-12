@@ -33,7 +33,7 @@ public class Day1 {
 
     @Test
     public void part1() throws IOException {
-        String input = Files.readString(Path.of("input/1"));
+        String input = Files.readString(Path.of("input/1/in"));
         List<Integer> right = Lists.newArrayList();
         List<Integer> left = Lists.newArrayList();
         Arrays.stream(input.split("\n")).forEach(i -> {
@@ -56,7 +56,7 @@ public class Day1 {
 
     @Test
     public void part2() throws IOException {
-        String input = Files.readString(Path.of("input/1"));
+        String input = Files.readString(Path.of("input/1/in"));
         List<Integer> right = Lists.newArrayList();
         List<Integer> left = Lists.newArrayList();
         Arrays.stream(input.split("\n")).forEach(i -> {
